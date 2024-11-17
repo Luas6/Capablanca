@@ -1,0 +1,26 @@
+<section id="section-miembros" class="container my-4">
+    <header class="my-4">
+        <h1 class="text-center">Miembros del club</h1>
+    </header>
+
+    <div class="d-flex flex-wrap gap-4 justify-content-center">
+        <div *ngFor="let miembro of miembros" class="card mb-3 justify-content-center" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4 contenedor-imagen-miembro">
+                    <img [src]="miembro.rutaFoto" class="img-miembro img-fluid rounded-start" alt="{{ miembro.nombre }}">
+                </div>
+                <div class="col-md-8 align-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ miembro.nombre }}</h5>
+                        <p class="card-subtitle mb-2 text-muted">{{ miembro.rating }}</p>
+                        <p class="card-text">{{ miembro.descripcion }}</p>
+                        <a [href]="miembro.fideLink" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Fide</a>
+                        <div *ngIf="miembro.opcional">
+                            <a [href]="miembro.opcional.link" target="_blank" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{ miembro.opcional.nombrelink }}</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

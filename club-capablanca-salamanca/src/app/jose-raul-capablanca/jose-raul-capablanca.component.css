@@ -1,0 +1,10 @@
+.board{
+    width: 400px;
+    align-self: center;
+}
+
+@media (min-width: 1200px) {
+    .board{
+        width: 500px;
+    }
+}
