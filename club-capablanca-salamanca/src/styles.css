@@ -4,3 +4,24 @@
     margin-right: 8px;
   }
   
+  @font-face {
+    font-family: 'GeosansLight';
+    src: url('./assets/GeosansLight.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Dream-Orphans';
+    src: url('./assets/Dream-Orphans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'GeosansLight', sans-serif !important;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Dream-Orphans', sans-serif !important;
+  }
+  

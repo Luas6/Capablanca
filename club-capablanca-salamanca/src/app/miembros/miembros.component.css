@@ -3,6 +3,11 @@
     max-width: 450px;
 }
 
+#section-miembros .card .card-title{
+    font-size: 1.50rem;
+}
+
+
 #section-miembros .contenedor-imagen-miembro{
     text-align: center;
 }
