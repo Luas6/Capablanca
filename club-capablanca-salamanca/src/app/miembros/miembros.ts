@@ -2,6 +2,12 @@ import { Miembro } from "./miembro.model"
 
 export const MIEMBROS: Miembro[]=[
     {
+        nombre: "Luis Martín",
+        rating: 1990,
+        descripcion: "",
+        fideLink: "https://ratings.fide.com/profile/94711372",
+        rutaFoto: "/assets/img/miembros/avatar-default.webp"
+    },{
         nombre: "Miguel Galán",
         rating: 1750,
         descripcion: "",
@@ -9,12 +15,6 @@ export const MIEMBROS: Miembro[]=[
         rutaFoto: "/assets/img/miembros/avatar-default.webp"
     },
     {
-        nombre: "Luis Martín",
-        rating: 1750,
-        descripcion: "",
-        fideLink: "https://ratings.fide.com/profile/94711372",
-        rutaFoto: "/assets/img/miembros/avatar-default.webp"
-    },{
         nombre: "Fernando Flores",
         rating: 1725,
         descripcion: "",
@@ -23,7 +23,7 @@ export const MIEMBROS: Miembro[]=[
     },
     {
         nombre: "Óscar Bravo",
-        rating: 1725,
+        rating: 1700,
         descripcion: "",
         fideLink: "https://ratings.fide.com/profile/94705127",
         rutaFoto: "/assets/img/miembros/avatar-default.webp"
@@ -44,7 +44,7 @@ export const MIEMBROS: Miembro[]=[
     },
     {
         nombre: "Javier Óscar Sierra",
-        rating: 1600,
+        rating: 1650,
         descripcion: "",
         fideLink: "https://ratings.fide.com/profile/24509388",
         rutaFoto: "/assets/img/miembros/avatar-default.webp"
@@ -58,7 +58,7 @@ export const MIEMBROS: Miembro[]=[
     },
     {
         nombre: "Marcos Terrero",
-        rating: 1600,
+        rating: 1520,
         descripcion: "",
         fideLink: "https://ratings.fide.com/profile/523007591",
         rutaFoto: "/assets/img/miembros/avatar-default.webp"
