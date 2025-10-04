@@ -4,9 +4,9 @@ export const MIEMBROS: Miembro[]=[
     {
         nombre: "Luis Martín",
         rating: 1990,
-        descripcion: "",
+        descripcion: "Nuestro integrante más inquieto, le va mejor en el ajedrez que en los estudios",
         fideLink: "https://ratings.fide.com/profile/94711372",
-        rutaFoto: "/assets/img/miembros/avatar-default.webp"
+        rutaFoto: "/assets/img/miembros/luis.webp"
     },{
         nombre: "Miguel Galán",
         rating: 1750,
@@ -17,9 +17,13 @@ export const MIEMBROS: Miembro[]=[
     {
         nombre: "Fernando Flores",
         rating: 1725,
-        descripcion: "",
+        descripcion: "Fernando trabaja haciendo desaparecer cartas y se entretiene haciendo desaparecer alfiles",
         fideLink: "https://ratings.fide.com/profile/94700028",
-        rutaFoto: "/assets/img/miembros/avatar-default.webp"
+        rutaFoto: "/assets/img/miembros/avatar-default.webp",
+         opcional: {
+            link: "https://www.fernandofloresmagia.es/",
+            nombrelink: "Fernando Flores Magia"
+          }
     },
     {
         nombre: "Óscar Bravo",
@@ -31,7 +35,7 @@ export const MIEMBROS: Miembro[]=[
     {
         nombre: "Emilio Sánchez",
         rating: 1650,
-        descripcion: "Si no le ves persiguiendo un bandido, está persiguiendo tu enroque",
+        descripcion: "¡Alto, policía! Su alfil queda confiscado",
         fideLink: "https://ratings.fide.com/profile/24509400",
         rutaFoto: "/assets/img/miembros/avatar-default.webp"
     },
