@@ -28,11 +28,13 @@ jobs:
 
       - name: 📦 Instalar dependencias
         run: npm ci
+        working-directory: club-capablanca-salamanca
 
       - name: 🏗️ Compilar la app Angular
         run: |
           npm run build -- --output-path=dist --base-href="/Capablanca/"
           cp dist/index.html dist/404.html
+        working-directory: club-capablanca-salamanca
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -40,7 +42,7 @@ jobs:
       - name: 📤 Subir el contenido compilado
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'  # Solo sube la carpeta compilada
+          path: 'club-capablanca-salamanca/dist'  # Ajustado a la ruta correcta
 
       - name: 🚀 Deploy a GitHub Pages
         id: deployment
