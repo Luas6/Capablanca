@@ -21,6 +21,7 @@
   src: url('./assets/GeosansLight.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +29,7 @@
   src: url('./assets/Dream-Orphans.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
