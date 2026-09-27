@@ -1,0 +1,58 @@
+<section class="seccion" *ngIf="noticia">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <nav aria-label="breadcrumb" class="miga-pan">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a routerLink="/actualidad">Actualidad</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artículo</li>
+          </ol>
+        </nav>
+
+        <article class="articulo">
+          <header class="articulo__cabecera">
+            <p class="articulo__fecha">{{ noticia.fecha }} · {{ noticia.autor }}</p>
+            <h1 class="articulo__titulo">{{ noticia.titulo }}</h1>
+            <div class="ornamento"><span class="ornamento__pieza"></span></div>
+          </header>
+
+          <div class="articulo__cuerpo">
+            <p class="articulo__entradilla">{{ noticia.contenido[0] }}</p>
+            <p *ngFor="let parrafo of noticia.contenido.slice(1)">{{ parrafo }}</p>
+          </div>
+
+          <footer class="articulo__pie">
+            <div class="articulo__etiquetas">
+              <span class="articulo__etiqueta" *ngFor="let etiqueta of noticia.etiquetas">
+                {{ etiqueta }}
+              </span>
+            </div>
+            <p class="articulo__fuente">
+              Fuente original:
+              <a [href]="noticia.fuenteUrl" target="_blank" rel="noopener noreferrer">
+                {{ noticia.fuente }}
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <div class="text-center mt-5">
+          <a class="btn-capablanca" routerLink="/actualidad">Volver a Actualidad</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" *ngIf="!noticia">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+        <h1>Artículo no encontrado</h1>
+        <p class="subtitulo-seccion">El artículo que buscas no existe o ha sido movido.</p>
+        <a class="btn-capablanca" routerLink="/actualidad">Volver a Actualidad</a>
+      </div>
+    </div>
+  </div>
+</section>

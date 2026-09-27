@@ -1,0 +1,32 @@
+<section class="seccion">
+  <div class="container">
+    <header class="text-center mb-5">
+      <p class="texto-etiqueta">El club en los medios</p>
+      <h1 class="titulo-seccion">Actualidad</h1>
+      <div class="ornamento"><span class="ornamento__pieza"></span></div>
+      <p class="subtitulo-seccion">
+        Noticias, eventos y actividades del Club de Ajedrez Capablanca Salamanca.
+      </p>
+    </header>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let noticia of noticias">
+        <article class="tarjeta-noticia">
+          <div class="tarjeta-noticia__cuerpo">
+            <p class="tarjeta-noticia__fecha">{{ noticia.fecha }}</p>
+            <h2 class="tarjeta-noticia__titulo">
+              <a [routerLink]="['/actualidad', noticia.slug]">{{ noticia.titulo }}</a>
+            </h2>
+            <p class="tarjeta-noticia__extracto">{{ noticia.extracto }}</p>
+            <a class="tarjeta-noticia__enlace" [routerLink]="['/actualidad', noticia.slug]">
+              Leer artículo completo
+            </a>
+          </div>
+          <footer class="tarjeta-noticia__pie">
+            <span class="tarjeta-noticia__fuente">Fuente: {{ noticia.fuente }}</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

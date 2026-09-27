@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { JoseRaulCapablancaComponent } from './jose-raul-capablanca/jose-raul-capablanca.component';
-import { BlogComponent } from './blog/blog.component';
+import { ActualidadComponent } from './actualidad/actualidad.component';
+import { ArticuloComponent } from './actualidad/articulo.component';
 import { ClubComponent } from './club/club.component';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ClubComponent } from './club/club.component';
     AppComponent,
     HomeComponent,
     JoseRaulCapablancaComponent,
-    BlogComponent,
+    ActualidadComponent,
+    ArticuloComponent,
     ClubComponent
   ],
   imports: [

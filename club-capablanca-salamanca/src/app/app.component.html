@@ -1,33 +1,54 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">
-      <img src="assets/img/capablanca-logo-white.webp" alt="Logo Capablanca" width="64" height="60">
+<nav class="navbar navbar-expand-lg navbar-dark barra-navegacion fixed-top">
+  <div class="container">
+    <a class="navbar-brand barra-navegacion__marca" routerLink="/">
+      <img src="assets/img/capablanca-logo-white.webp" alt="Logo Capablanca" width="42" height="39">
+      <span class="barra-navegacion__texto">
+        <span class="barra-navegacion__nombre">Capablanca</span>
+        <span class="barra-navegacion__sub">Club de Ajedrez · Salamanca</span>
+      </span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/club">Club</a>
+          <a class="nav-link" routerLink="/club" routerLinkActive="activo">Club</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/actualidad">Actualidad</a>
+          <a class="nav-link" routerLink="/actualidad" routerLinkActive="activo">Actualidad</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/homenaje-a-capablanca">Homenaje a José Raúl Capablanca</a>
+          <a class="nav-link" routerLink="/homenaje-a-capablanca" routerLinkActive="activo">Homenaje a Capablanca</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="router-div" class="py-5">
+<main id="router-div">
   <router-outlet></router-outlet>
-</div>
+</main>
 
-<footer id="footer-principal" class="text-center text-lg-start bg-dark fixed-bottom">
-  <div class="text-center p-3 text-white">
-    <b>&copy; 2025 Copyright:</b> Club de Ajedrez Capablanca Salamanca
+<footer class="pie-pagina">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-md-4 text-center text-md-start text-white">
+        <img src="assets/img/capablanca-logo-white.webp" alt="Logo Capablanca" width="46" height="43">
+        <p class="pie-pagina__nombre">Club de Ajedrez Capablanca Salamanca</p>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <ul class="pie-pagina__enlaces">
+          <li><a routerLink="/club">Club</a></li>
+          <li><a routerLink="/actualidad">Actualidad</a></li>
+          <li><a routerLink="/homenaje-a-capablanca">Homenaje a Capablanca</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <img src="assets/img/capablanca-logo-blue.webp" alt="" width="30" height="28" class="pie-pagina__pieza" aria-hidden="true">
+        <p class="pie-pagina__copy">&copy; 2026 Club de Ajedrez Capablanca Salamanca</p>
+      </div>
+    </div>
   </div>
 </footer>

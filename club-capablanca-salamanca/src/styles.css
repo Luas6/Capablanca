@@ -1,27 +1,218 @@
-.icono {
-    width: 28px;
-    height: 28px;
-    margin-right: 8px;
-  }
-  
-  @font-face {
-    font-family: 'GeosansLight';
-    src: url('./assets/GeosansLight.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Dream-Orphans';
-    src: url('./assets/Dream-Orphans.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+/* ============================================================
+   Club de Ajedrez Capablanca Salamanca — Estilos globales
+   Paleta: azul marino (identidad), marfil, dorado envejecido
+   ============================================================ */
+
+:root {
+  --azul-capablanca: #16305e;
+  --azul-oscuro: #0d1d3d;
+  --azul-profundo: #0a1730;
+  --marfil: #f5efe3;
+  --papel: #fbf8f1;
+  --dorado: #b08d3e;
+  --dorado-suave: #c9ab63;
+  --tinta: #2c2a26;
+  --gris-suave: #6b675f;
+  --linea: #ddd3bf;
+}
+
+@font-face {
+  font-family: 'GeosansLight';
+  src: url('./assets/GeosansLight.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dream-Orphans';
+  src: url('./assets/Dream-Orphans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'GeosansLight', 'Segoe UI', sans-serif !important;
+  background-color: var(--papel);
+  color: var(--tinta);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dream-Orphans', 'GeosansLight', sans-serif !important;
+  color: var(--azul-capablanca);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Utilidades decorativas ---------- */
+
+.seccion {
+  padding: 4.5rem 0;
+}
+
+.seccion--marfil {
+  background-color: var(--marfil);
+}
+
+.seccion--azul {
+  background-color: var(--azul-capablanca);
+  color: var(--marfil);
+}
+
+.seccion--azul h1,
+.seccion--azul h2,
+.seccion--azul h3 {
+  color: var(--marfil);
+}
+
+.titulo-seccion {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitulo-seccion {
+  text-align: center;
+  color: var(--gris-suave);
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.seccion--azul .subtitulo-seccion {
+  color: rgba(245, 239, 227, 0.75);
+}
+
+/* Filete dorado ornamental */
+.ornamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 0 auto 2.5rem;
+}
+
+.ornamento::before,
+.ornamento::after {
+  content: '';
+  height: 1px;
+  width: 90px;
+  background: linear-gradient(to right, transparent, var(--dorado));
+}
+
+.ornamento::after {
+  background: linear-gradient(to left, transparent, var(--dorado));
+}
+
+.ornamento__pieza {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dorado);
+  transform: rotate(45deg);
+}
+
+/* ---------- Botones ---------- */
+
+.btn-capablanca {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  font-family: 'Dream-Orphans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border: 1px solid var(--azul-capablanca);
+  color: var(--azul-capablanca);
+  background: transparent;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-capablanca:hover,
+.btn-capablanca:focus {
+  background-color: var(--azul-capablanca);
+  color: var(--marfil);
+  text-decoration: none;
+}
+
+.btn-capablanca--dorado {
+  border-color: var(--dorado);
+  color: var(--dorado);
+}
+
+.btn-capablanca--dorado:hover,
+.btn-capablanca--dorado:focus {
+  background-color: var(--dorado);
+  border-color: var(--dorado);
+  color: var(--azul-profundo);
+}
+
+.btn-capablanca--claro {
+  border-color: var(--marfil);
+  color: var(--marfil);
+}
+
+.btn-capablanca--claro:hover,
+.btn-capablanca--claro:focus {
+  background-color: var(--marfil);
+  color: var(--azul-capablanca);
+}
+
+/* ---------- Tarjetas ---------- */
+
+.tarjeta-club {
+  background-color: #fff;
+  border: 1px solid var(--linea);
+  border-top: 3px solid var(--azul-capablanca);
+  height: 100%;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-club:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(13, 29, 61, 0.12);
+}
+
+.tarjeta-club__icono {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1.1rem;
+}
+
+.tarjeta-club__titulo {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.tarjeta-club__texto {
+  color: var(--gris-suave);
+  font-size: 0.98rem;
+  margin-bottom: 1.4rem;
+}
+
+/* ---------- Enlaces de navegación ---------- */
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+}
+
+/* ---------- Adaptaciones responsive ---------- */
+
+@media (max-width: 767.98px) {
+  .seccion {
+    padding: 3.2rem 0;
   }
 
-  body {
-    font-family: 'GeosansLight', sans-serif !important;
+  .titulo-seccion {
+    font-size: 1.5rem;
   }
-
-  h1, h2, h3 {
-    font-family: 'Dream-Orphans', sans-serif !important;
-  }
-  
+}

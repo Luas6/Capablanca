@@ -1,4 +1,99 @@
+.barra-navegacion {
+  background-color: var(--azul-oscuro);
+  border-bottom: 2px solid var(--dorado);
+  padding: 0.55rem 0;
+}
+
+.barra-navegacion__marca {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0;
+}
+
+.barra-navegacion__texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.barra-navegacion__nombre {
+  font-family: 'Dream-Orphans', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  color: var(--marfil);
+}
+
+.barra-navegacion__sub {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--dorado-suave);
+}
+
+.barra-navegacion .nav-link {
+  color: rgba(245, 239, 227, 0.85);
+  padding: 0.4rem 0;
+  margin-left: 1.4rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.barra-navegacion .nav-link:hover {
+  color: var(--marfil);
+}
+
+.barra-navegacion .nav-link.activo {
+  color: var(--dorado-suave);
+  border-bottom-color: var(--dorado-suave);
+}
+
 #router-div {
-    margin-top: 76px;
-    padding-bottom: 80px;
+  min-height: 60vh;
+}
+
+.pie-pagina {
+  background-color: var(--azul-profundo);
+  border-top: 2px solid var(--dorado);
+  padding: 2.2rem 0 1.8rem;
+}
+
+.pie-pagina__nombre {
+  color: rgba(245, 239, 227, 0.75);
+  font-size: 0.85rem;
+  margin: 0.7rem 0 0;
+}
+
+.pie-pagina__enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pie-pagina__enlaces li {
+  display: inline-block;
+  margin: 0 0.7rem;
+}
+
+.pie-pagina__enlaces a {
+  color: rgba(245, 239, 227, 0.85);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.pie-pagina__enlaces a:hover {
+  color: var(--dorado-suave);
+}
+
+.pie-pagina__pieza {
+  opacity: 0.9;
+}
+
+.pie-pagina__copy {
+  color: rgba(245, 239, 227, 0.6);
+  font-size: 0.78rem;
+  margin: 0.5rem 0 0;
 }

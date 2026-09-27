@@ -1,0 +1,146 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(135deg, #0d1f1a 0%, #1a3c34 100%);
+  color: #f5f0e8;
+  padding: 5rem 0 4rem;
+  text-align: center;
+  border-bottom: 3px solid #c9a84c;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero-logo {
+  width: 110px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+.hero-title {
+  font-family: 'Dream-Orphans', serif;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #f5f0e8;
+  letter-spacing: 0.5px;
+}
+
+.hero-title span {
+  color: #c9a84c;
+}
+
+.hero-divider {
+  width: 100px;
+  height: 2px;
+  background: #c9a84c;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: #a8a89a;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* ===== SECTIONS ===== */
+.sections {
+  padding: 4rem 0 5rem;
+  background: #f5f0e8;
+}
+
+.section-card {
+  background: #fff;
+  border: 1px solid #e0d8c8;
+  border-radius: 4px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #c9a84c;
+  border-radius: 4px 4px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.section-card:hover::before {
+  opacity: 1;
+}
+
+.section-icon {
+  margin-bottom: 1.25rem;
+}
+
+.section-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+.section-title {
+  font-family: 'Dream-Orphans', serif;
+  font-size: 1.3rem;
+  color: #1a3c34;
+  margin-bottom: 0.75rem;
+}
+
+.section-text {
+  color: #6b6b6b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.section-link {
+  display: inline-block;
+  padding: 0.6rem 1.75rem;
+  background: #1a3c34;
+  color: #f5f0e8;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.section-link:hover {
+  background: #c9a84c;
+  color: #0d1f1a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .sections {
+    padding: 2.5rem 0 3rem;
+  }
+}

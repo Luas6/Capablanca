@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
+import { NoticiasService } from '../actualidad/noticias.service';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,7 +9,8 @@ describe('HomeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      declarations: [HomeComponent],
+      providers: [NoticiasService]
     });
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
