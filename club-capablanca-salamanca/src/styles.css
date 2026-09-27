@@ -50,6 +50,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- Utilidades decorativas ---------- */
 
+.icono {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 .seccion {
   padding: 4.5rem 0;
 }

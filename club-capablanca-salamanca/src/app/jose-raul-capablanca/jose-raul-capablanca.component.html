@@ -1,88 +1,187 @@
-<section class="container my-4">
-    <h1 class="text-center">José Raúl Capablanca</h1>
-    <p class="lead text-center">Uno de los más grandes maestros de ajedrez de todos los tiempos.</p>
-    <div class="m-auto col-10 col-md-8 col-lg-4">
-        <img src="assets/img/jose-raul-capablanca.webp" alt="José Raúl Capablanca"
-            class="img-fluid rounded mx-auto d-block">
+<section class="seccion seccion--azul homenaje">
+  <div class="container">
+    <!-- ============ CABECERA ============ -->
+    <header class="homenaje__cabecera">
+      <p class="texto-etiqueta">Homenaje</p>
+      <h1 class="titulo-seccion">José Raúl Capablanca</h1>
+      <div class="ornamento"><span class="ornamento__pieza"></span></div>
+      <p class="homenaje__lead">
+        Uno de los más grandes maestros de ajedrez de todos los tiempos.
+      </p>
+      <img src="assets/img/jose-raul-capablanca.webp" alt="José Raúl Capablanca"
+           class="homenaje__retrato img-fluid rounded">
+    </header>
 
+    <!-- ============ SU HISTORIA ============ -->
+    <div class="bloque-texto">
+      <h2 class="bloque-texto__titulo">
+        <img class="icono" src="assets/img/icons/historia.svg" alt="Historia">Su Historia
+      </h2>
+      <p>
+        José Raúl Capablanca, nacido en La Habana, Cuba, en 1888, fue un prodigioso
+        jugador de ajedrez que destacó desde temprana edad. A los 12 años ya había
+        vencido a varios campeones locales y a los 20 se convirtió en campeón mundial,
+        un título que mantuvo hasta 1927. Capablanca fue conocido por su excepcional
+        capacidad para simplificar las posiciones y por su estilo de juego fluido y
+        natural.
+      </p>
+      <p>
+        Capablanca es considerado uno de los mejores jugadores de ajedrez de todos los
+        tiempos, y su legado perdura en la historia del juego.
+      </p>
     </div>
 
-    <div class="mt-3">
-        <h2><img class="icono" src="assets/img/icons/historia.svg" alt="icono-historia">Su Historia</h2>
-        <p>José Raúl Capablanca, nacido en La Habana, Cuba, en 1888, fue un prodigioso jugador de ajedrez que se destacó
-            desde temprana edad. A los 12 años, ya había vencido a varios campeones de ajedrez locales, y a los 20, se
-            convirtió en campeón mundial de ajedrez, un título que mantuvo hasta 1927. Capablanca fue conocido por su
-            excepcional capacidad para simplificar las posiciones y por su estilo de juego fluido y natural.</p>
-        <p>Capablanca es considerado uno de los mejores jugadores de ajedrez de todos los tiempos, y su legado perdura
-            hasta hoy en la historia del juego.</p>
+    <!-- ============ EL TÍTULO MUNDIAL ============ -->
+    <div class="bloque-texto">
+      <h2 class="bloque-texto__titulo">
+        <img class="icono" src="assets/img/icons/trofeo.svg" alt="Título mundial">El Título Mundial de Ajedrez
+      </h2>
+      <p>
+        José Raúl Capablanca se coronó campeón mundial de ajedrez en 1921 al vencer a
+        Emanuel Lasker, quien había sido campeón durante más de 27 años. La victoria de
+        Capablanca fue el resultado de un brillante ascenso en el mundo del ajedrez,
+        destacándose como un genio táctico y estratégico.
+      </p>
+      <p>
+        Durante su reinado, Capablanca defendió con éxito su título en varias ocasiones.
+        Su estilo de juego, caracterizado por su intuición y habilidades en el final de
+        partida, le permitió mantener el título durante varios años sin perder ninguna
+        partida importante.
+      </p>
+      <p>
+        Sin embargo, en 1927, Capablanca perdió el título mundial frente a Alexander
+        Alekhine en un duelo épico que pasó a la historia como uno de los más
+        emocionantes y desafiantes del ajedrez. A pesar de su derrota, su legado como
+        uno de los más grandes campeones mundiales perdura hasta hoy.
+      </p>
     </div>
 
-    <div class="mt-3">
-        <h2><img class="icono" src="assets/img/icons/trofeo.svg" alt="icono-trofeo">El Título Mundial de Ajedrez</h2>
-        <p>José Raúl Capablanca se coronó campeón mundial de ajedrez en 1921 al vencer a Emanuel Lasker, quien había
-            sido campeón durante más de 27 años. La victoria de Capablanca fue el resultado de un brillante ascenso en
-            el mundo del ajedrez, destacándose como un genio táctico y estratégico.</p>
-        <p>Durante su reinado, Capablanca defendió con éxito su título en varias ocasiones. Su estilo de juego,
-            caracterizado por su intuición y habilidades en el final de partida, le permitió mantener el título durante
-            varios años sin perder ninguna partida importante.</p>
-        <p>Sin embargo, en 1927, Capablanca perdió el título mundial frente a Alexander Alekhine en un duelo épico que
-            pasó a la historia como uno de los más emocionantes y desafiantes en la historia del ajedrez. A pesar de su
-            derrota, el legado de Capablanca como uno de los más grandes campeones mundiales perdura hasta hoy.</p>
-    </div>
-    <div class="mt-3">
-        <h3><img class="icono" src="assets/img/icons/problema.svg" alt="icono-problema">Ejercicios</h3>
-    </div>
-    <div class="d-flex text-center flex-column justify-content-center">
+    <!-- ============ EJERCICIOS ============ -->
+    <div class="bloque-texto bloque-texto--problemas">
+      <h2 class="bloque-texto__titulo">
+        <img class="icono" src="assets/img/icons/problema.svg" alt="Ejercicios">Ejercicios
+      </h2>
+
+      <div class="problema">
         <div id="myBoard1" class="board"></div>
-        <div>
-            <p><b><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="4" fill="white" stroke="black" stroke-width="1" />
-                    </svg> Jose Raul Capablanca vs <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="4" fill="black" stroke="white" stroke-width="1" />
-                    </svg> Edward Lasker, London, 1913</b></p>
-            <p>Blancas juegan y ganan</p>
-        </div>
-        <hr>
+        <p class="problema__titulo">
+          <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" fill="white" stroke="black" stroke-width="1" />
+          </svg>
+          Capablanca vs
+          <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" fill="black" stroke="white" stroke-width="1" />
+          </svg>
+          Edward Lasker, Londres, 1913
+        </p>
+        <p class="problema__enunciado">Blancas juegan y ganan</p>
+      </div>
+
+      <hr class="problema__separador">
+
+      <div class="problema">
         <div id="myBoard2" class="board"></div>
-        <div>
-            <p><b><svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="4" fill="white" stroke="black" stroke-width="1" />
-                    </svg> Jose Raul Capablanca vs <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="4" fill="black" stroke="white" stroke-width="1" />
-                    </svg>A Souza Campos, Sao Paulo, 1927</b></p>
-            <p>Blancas juegan y dan mate en 5</p>
+        <p class="problema__titulo">
+          <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" fill="white" stroke="black" stroke-width="1" />
+          </svg>
+          Capablanca vs
+          <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" fill="black" stroke="white" stroke-width="1" />
+          </svg>
+          A. Souza Campos, São Paulo, 1927
+        </p>
+        <p class="problema__enunciado">Blancas juegan y dan mate en 5</p>
+      </div>
+    </div>
+
+    <!-- ============ MEJORES PARTIDAS ============ -->
+    <div class="bloque-texto">
+      <h2 class="bloque-texto__titulo bloque-texto__titulo--centrado">
+        Algunas de sus mejores partidas
+      </h2>
+      <p class="partidas__intro">
+        Selección de partidas comentadas extraídas de
+        <a href="https://lichess.org/study/L6PBCnMA" target="_blank" rel="noopener noreferrer">
+          «Capablanca's Best Chess Endings»
+        </a>
+        de Lichess.
+      </p>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Capablanca – Corzo, La Habana, 1901</h3>
+        <p class="partida__nota">La primera partida de Capablanca en el torneo de La Habana, con apenas 13 años.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/awOpqpBs"
+                  title="Capablanca – Corzo, La Habana, 1913" frameborder="0" allowfullscreen loading="lazy"></iframe>
         </div>
+      </div>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Marshall – Capablanca, Nueva York, 1909</h3>
+        <p class="partida__nota">Una de las partidas más célebres de la historia: la defensa ante el gran ataque de Marshall.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/cWDBe9A0"
+                  title="Marshall – Capablanca, Nueva York, 1909" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Capablanca – Janowski, San Sebastián, 1911</h3>
+        <p class="partida__nota">Victoria del maestro cubano en el fuerte torneo de San Sebastián.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/RVCqbGcZ"
+                  title="Capablanca – Janowski, San Sebastián, 1911" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Lasker – Capablanca, La Habana, 1921</h3>
+        <p class="partida__nota">Partida del match por el título mundial en el que Capablanca destronó a Lasker.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/mzgc3Jdr"
+                  title="Lasker – Capablanca, La Habana, 1921" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Capablanca – Alekhine, Buenos Aires, 1927</h3>
+        <p class="partida__nota">Partida del match de revancha en el que Capablanca perdió el título mundial.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/vcTmWeQv"
+                  title="Capablanca – Alekhine, Buenos Aires, 1927" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="partida">
+        <h3 class="partida__titulo">Capablanca – Reshevsky, Nottingham, 1936</h3>
+        <p class="partida__nota">La gran victoria de Capablanca en el legendario torneo de Nottingham, con 48 años.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://lichess.org/study/embed/L6PBCnMA/vCbE2rqD"
+                  title="Capablanca – Reshevsky, Nottingham, 1936" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
 
-     <div class="mt-3">
-        <h2><img class="icono" src="assets/img/icons/battle.svg" alt="icono-partidas">Algunas de sus mejores partidas</h2>
-     </div>
+    <!-- ============ VÍDEOS ============ -->
+    <div class="bloque-texto">
+      <h2 class="bloque-texto__titulo bloque-texto__titulo--centrado">
+        Vídeos sobre su figura
+      </h2>
 
-<div class="mt-3 ratio ratio-21x9">
-  <iframe
-    src="https://lichess.org/study/embed/L6PBCnMA/awOpqpBs"
-    title="Lichess study"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-<div class="mt-3 ratio ratio-21x9">
-  <iframe
-    src="https://lichess.org/study/embed/L6PBCnMA/vcTmWeQv"
-    title="Lichess study"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>    <div class="mt-3 ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/C02erJcOkfw?si=SezB8L1frMkd2GZZ" title="YouTube video player"
-            allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-        </iframe>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/C02erJcOkfw"
+                title="Vídeo sobre José Raúl Capablanca" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/TOi8XcBg88M"
+                title="Vídeo sobre José Raúl Capablanca" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
     </div>
-    <div class="mt-3 ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/TOi8XcBg88M?si=SVRdFhn4mK5RFNY9" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+  </div>
 </section>
