@@ -23,6 +23,23 @@ export class NoticiasService {
       fuente: 'La Gaceta de Salamanca',
       fuenteUrl: 'https://www.lagacetadesalamanca.es/provincia/samuel-matias-jimenez-corona-campeon-iii-campeonato-20260907175430-ga.html',
       etiquetas: ['Ajedrez', 'Macotera', 'Peñaranda y Las Villas', 'Salamanca']
+    },
+    {
+      id: 2,
+      slug: 'luis-martin-bronce-campeonato-espana-tramos-de-elo-2025',
+      titulo: 'Luis Martín Mateos logra el bronce en el Campeonato de España por Tramos de Elo <2000',
+      extracto: 'El salmantino firmó 6 victorias, 2 empates y 1 derrota en Hoznayo, con una actuación de 2150 puntos y una subida de 136 puntos de Elo.',
+      contenido: [
+        'El Campeonato de España por Tramos de Elo 2025 reunió en Hoznayo (Cantabria), del 6 al 11 de septiembre, a 266 jugadores divididos en tres torneos según su rating máximo en la temporada precedente: 2299 puntos para el grupo A, 1999 para el B y 1699 para el C. La competición se disputó a 9 rondas con ritmo estándar de 90 minutos más 30 segundos por jugada.',
+        'Hasta el enclave cántabro se desplazaron 20 jugadores de nuestra comunidad, con un desempeño global muy bueno y subidas de Elo casi unánimes. Pero la gran actuación individual corrió a cargo del salmantino Luis Martín Mateos en el torneo sub 2000, el grupo más numeroso de la cita con 107 participantes.',
+        'Martín Mateos sumó 6 victorias, 2 empates y una única derrota, precisamente ante el ganador del torneo, lo que le valió para colgarse la medalla de bronce. El salmantino viajó siempre en el grupo de cabeza y mantuvo opciones de pelear por el título hasta la última ronda.',
+        'Su actuación se cifró en un rendimiento de 2150 puntos y una subida de 136 puntos de Elo, avales más que suficientes de la solidez de este talentoso jugador, miembro de la prometedora generación de jóvenes ajedrecistas de nuestra comunidad.'
+      ],
+      fecha: '11 de septiembre de 2025',
+      autor: 'FECLA',
+      fuente: 'FECLA - Federación Castellano-Leonesa de Ajedrez',
+      fuenteUrl: 'https://fecla.es/2025/09/11/campeonato-espana-por-tramos-de-elo-2025/',
+      etiquetas: ['Ajedrez', 'Campeonato de España', 'Elo', 'Salamanca']
     }
   ];
 
