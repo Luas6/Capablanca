@@ -37,9 +37,9 @@ html {
 }
 
 body {
-  font-family: 'GeosansLight', 'Segoe UI', sans-serif !important;
+  font-family: 'Segoe UI', Arial, sans-serif !important;
   background-color: var(--papel);
-  color: var(--tinta);
+  color: #242424;
   font-size: 1.05rem;
   line-height: 1.7;
 }
