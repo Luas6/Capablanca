@@ -42,11 +42,32 @@
 .articulo__cuerpo p {
   margin-bottom: 1.3rem;
   text-align: justify;
+  font-size: 1.1rem;
 }
 
 .articulo__entradilla {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: var(--azul-capablanca);
+}
+
+.articulo__imagen {
+  margin: 2rem 0;
+}
+
+.articulo__imagen img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center 50%;
+}
+
+.articulo__imagen figcaption {
+  margin-top: 0.6rem;
+  color: var(--gris-suave);
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
 }
 
 .articulo__pie {

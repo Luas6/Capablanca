@@ -9,4 +9,5 @@ export interface Noticia {
   fuente: string;
   fuenteUrl: string;
   etiquetas: string[];
+  imagenes?: { url: string; textoAlternativo: string; pie: string }[];
 }

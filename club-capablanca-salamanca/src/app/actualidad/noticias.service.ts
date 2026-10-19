@@ -8,6 +8,27 @@ export class NoticiasService {
 
   private noticias: Noticia[] = [
     {
+      id: 3,
+      slug: 'campeonato-equipos-provincial-salamanca-2026-17-octubre',
+      titulo: 'El Capablanca compite en el Campeonato por Equipos Provincial de Salamanca',
+      extracto: 'El equipo comenzó con dos empates y una victoria ante rivales fuertes, y terminó la jornada con 4 puntos de 10 posibles.',
+      contenido: [
+        'El 17 de octubre se disputó en Salamanca el Campeonato por Equipos Provincial 2026/27, una jornada de ajedrez por equipos en la que el Club Capablanca se midió a varios conjuntos fuertes de la provincia. La cita tuvo además un aliciente especial para el club: Javier Ángel debutó como nuevo integrante del equipo.',
+        'El equipo arrancó con buen ritmo: consiguió dos empates y una victoria en las primeras rondas, resultados que le permitieron mantenerse en la pelea frente a rivales de nivel.',
+        'Sin embargo, la fase final del torneo fue menos exitosa. Los resultados de esas últimas rondas, incluida una derrota en la ronda final, nos dejaron fuera de la zona alta de la clasificación. Cerramos la competición con 4 puntos de los 10 posibles.',
+        'Queremos dar la enhorabuena a la USAL por hacerse con la victoria, y al Macondo y al Club Deportivo Salamanca por completar el podio en segunda y tercera posición, respectivamente. También agradecemos a nuestros jugadores su esfuerzo y compromiso durante toda la jornada, y damos la bienvenida a Javier Ángel en su debut con el equipo.'
+      ],
+      fecha: '17 de octubre de 2026',
+      autor: 'Club de Ajedrez Capablanca Salamanca',
+      fuente: 'Club de Ajedrez Capablanca Salamanca',
+      fuenteUrl: '/actualidad',
+      etiquetas: ['Ajedrez', 'Equipos', 'Salamanca', '2026/27'],
+      imagenes: [
+        { url: 'assets/img/blog-salamanca-rapidas-equipos-17-10-2026/miembros-capablaca-equipo.jpeg', textoAlternativo: 'Integrantes del equipo Capablanca en el Campeonato por Equipos Provincial de Salamanca', pie: 'El equipo del Club Capablanca, presente en el Campeonato por Equipos Provincial 2026/27.' },
+        { url: 'assets/img/blog-salamanca-rapidas-equipos-17-10-2026/javeir-capablanca-equipos-2026.jpeg', textoAlternativo: 'Javier Ángel, nuevo integrante del Capablanca, en su debut durante el Campeonato por Equipos Provincial de Salamanca 2026/27', pie: 'Javier Ángel debutó como nuevo integrante del equipo Capablanca.' }
+      ]
+    },
+    {
       id: 1,
       slug: 'saul-matias-jimenez-campeon-iii-campeonato-virgen-de-la-encina',
       titulo: 'Saúl Matías Jiménez se corona campeón del III Campeonato de Ajedrez Virgen de la Encina de Macotera',
