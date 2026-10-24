@@ -52,10 +52,14 @@
 
 /* ============ PRESENTACIÓN ============ */
 
+.presentacion {
+  background-color: var(--azul-oscuro);
+}
+
 .presentacion__texto {
   text-align: center;
   font-size: 1.12rem;
-  color: var(--tinta);
+  color: var(--marfil);
   margin-bottom: 3rem;
 }
 
@@ -66,7 +70,7 @@
 .dato__numero {
   font-family: 'Dream-Orphans', sans-serif;
   font-size: 2rem;
-  color: var(--azul-capablanca);
+  color: var(--dorado-suave);
   margin-bottom: 0.2rem;
   line-height: 1.2;
 }
@@ -75,7 +79,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.75rem;
-  color: var(--gris-suave);
+  color: var(--marfil);
   margin: 0;
 }
 
@@ -107,18 +111,20 @@
 /* ============ DESTACADA ============ */
 
 .tarjeta-destacada {
-  background-color: rgba(251, 248, 241, 0.06);
-  border: 1px solid rgba(245, 239, 227, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid var(--linea);
   border-top: 3px solid var(--dorado);
-  padding: 2.5rem 2.5rem 2.2rem;
-  text-align: center;
+  padding: 2rem 1.8rem;
 }
 
 .tarjeta-destacada__fecha {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.75rem;
-  color: var(--dorado-suave);
+  color: var(--gris-suave);
   margin-bottom: 0.8rem;
 }
 
@@ -129,20 +135,32 @@
 }
 
 .tarjeta-destacada__titulo a {
-  color: var(--marfil);
+  color: var(--azul-capablanca);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.tarjeta-destacada__titulo a:hover {
-  color: var(--dorado-suave);
+.tarjeta-destacada__titulo a:hover,
+.tarjeta-destacada__titulo a:focus-visible {
+  color: var(--dorado);
 }
 
 .tarjeta-destacada__extracto {
-  color: rgba(245, 239, 227, 0.8);
+  color: var(--gris-suave);
   font-size: 0.98rem;
-  max-width: 560px;
-  margin: 0 auto 1.8rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.tarjeta-destacada__enlace {
+  color: var(--azul-capablanca);
+  text-decoration-color: var(--dorado);
+  text-underline-offset: 0.25em;
+}
+
+.tarjeta-destacada__enlace:hover,
+.tarjeta-destacada__enlace:focus-visible {
+  color: var(--dorado);
 }
 
 /* ============ RESPONSIVE ============ */
@@ -161,6 +179,6 @@
   }
 
   .tarjeta-destacada {
-    padding: 2rem 1.4rem 1.8rem;
+    padding: 1.8rem 1.4rem;
   }
 }

@@ -17,8 +17,34 @@
   </div>
 </section>
 
+<!-- ============ ACTUALIDAD DESTACADA ============ -->
+<section class="seccion seccion--marfil" *ngIf="noticiasDestacadas.length">
+  <div class="container">
+    <h2 class="titulo-seccion">Actualidad destacada</h2>
+    <div class="ornamento"><span class="ornamento__pieza"></span></div>
+    <p class="subtitulo-seccion">
+      Las últimas noticias del club y del ajedrez salmantino.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let noticia of noticiasDestacadas">
+        <article class="tarjeta-destacada">
+          <p class="tarjeta-destacada__fecha">{{ noticia.fecha }}</p>
+          <h3 class="tarjeta-destacada__titulo">
+            <a [routerLink]="['/actualidad', noticia.slug]">{{ noticia.titulo }}</a>
+          </h3>
+          <p class="tarjeta-destacada__extracto">{{ noticia.extracto }}</p>
+          <a class="tarjeta-destacada__enlace" [routerLink]="['/actualidad', noticia.slug]">
+            Leer artículo completo
+          </a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PRESENTACIÓN ============ -->
-<section class="seccion seccion--marfil">
+<section class="seccion seccion--azul presentacion">
   <div class="container">
     <h2 class="titulo-seccion">Un club con historia</h2>
     <div class="ornamento"><span class="ornamento__pieza"></span></div>
@@ -102,35 +128,6 @@
           </p>
           <a class="btn-capablanca" routerLink="/homenaje-a-capablanca">Visitar</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ACTUALIDAD DESTACADA ============ -->
-<section class="seccion seccion--azul" *ngIf="noticiaDestacada">
-  <div class="container">
-    <h2 class="titulo-seccion">Actualidad destacada</h2>
-    <div class="ornamento"><span class="ornamento__pieza"></span></div>
-    <p class="subtitulo-seccion">
-      Lo último que se cuece en el ajedrez salmantino.
-    </p>
-
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <article class="tarjeta-destacada">
-          <p class="tarjeta-destacada__fecha">{{ noticiaDestacada.fecha }}</p>
-          <h3 class="tarjeta-destacada__titulo">
-            <a [routerLink]="['/actualidad', noticiaDestacada.slug]">
-              {{ noticiaDestacada.titulo }}
-            </a>
-          </h3>
-          <p class="tarjeta-destacada__extracto">{{ noticiaDestacada.extracto }}</p>
-          <a class="btn-capablanca btn-capablanca--claro"
-             [routerLink]="['/actualidad', noticiaDestacada.slug]">
-            Leer artículo completo
-          </a>
-        </article>
       </div>
     </div>
   </div>

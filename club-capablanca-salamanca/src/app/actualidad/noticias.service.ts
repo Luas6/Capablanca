@@ -8,6 +8,29 @@ export class NoticiasService {
 
   private noticias: Noticia[] = [
     {
+      id: 4,
+      slug: 'torneo-equipos-salamanca-2026-ronda-1-capablanca-galledrez',
+      titulo: 'El Capablanca empata 2-2 con Galledrez en la primera ronda por equipos',
+      extracto: 'Luis Martín Mateos y Saúl Matías Jiménez ganaron sus partidas en las dos primeras mesas frente a Galledrez.',
+      contenido: [
+        'El Club de Ajedrez Capablanca comenzó el torneo por equipos de Salamanca con un empate 2-2 ante Galledrez en la primera ronda, disputada el 24 de octubre de 2026.',
+        'En la mesa 1, Luis Martín Mateos venció a Fernando Cagigas Calvente. En la mesa 2, Saúl Matías Jiménez sumó el segundo punto para el Capablanca frente a Álvaro Perdigón Moreno.',
+        'En la mesa 3, Juan Francisco Rivas Martín (Patxi) perdió ante Alicia Moreno Yuste. En la mesa 4, Jairo Calvo Benito, que debutaba con el club, cayó frente a Mario Blanco Paniagua. Con dos victorias y dos derrotas, el encuentro terminó en empate.',
+        'La partida de Jairo dejó una anécdota: su joven rival se dejó la dama, pero Jairo le permitió retirar la jugada. Lamentablemente, ese gesto le costó la partida.',
+        'En los otros encuentros de la primera ronda, Salamanca cayó 1-3 ante USAL, Ateneo ganó 2½-1½ a Helmántica, Alcaraván venció 4-0 a Casino y Macondo superó 2½-1½ a Alba de Tormes.',
+        'Los resultados individuales de la ronda pueden consultarse en Chess-Results.'
+      ],
+      fecha: '24 de octubre de 2026',
+      autor: 'Club de Ajedrez Capablanca Salamanca',
+      fuente: 'Chess-Results · Emparejamientos por mesas, ronda 1',
+      fuenteUrl: 'https://s3.chess-results.com/tnr1525880.aspx?lan=2&art=3&rd=1&SNode=S0',
+      etiquetas: ['Ajedrez', 'Equipos', 'Salamanca', '2026/27'],
+      imagenes: [
+        { url: 'assets/img/blog-equipos-2026-ronda-1/equipo-vertical.jpeg', textoAlternativo: 'Jugadores del Capablanca ante los tableros durante la jornada por equipos', pie: 'El Capablanca en la primera ronda del torneo por equipos.', vertical: true },
+        { url: 'assets/img/blog-equipos-2026-ronda-1/Luis-Y-Saul.jpeg', textoAlternativo: 'Luis y Saúl jugando sus partidas en las dos primeras mesas', pie: 'Luis y Saúl sumaron los dos puntos del Capablanca.' }
+      ]
+    },
+    {
       id: 3,
       slug: 'campeonato-equipos-provincial-salamanca-2026-17-octubre',
       titulo: 'El Capablanca compite en el Campeonato por Equipos Provincial de Salamanca',

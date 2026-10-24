@@ -8,9 +8,9 @@ import { Noticia } from '../actualidad/noticia.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  noticiaDestacada: Noticia | undefined;
+  noticiasDestacadas: Noticia[];
 
   constructor(noticiasService: NoticiasService) {
-    this.noticiaDestacada = noticiasService.obtenerNoticias()[0];
+    this.noticiasDestacadas = noticiasService.obtenerNoticias().slice(0, 3);
   }
 }

@@ -21,7 +21,7 @@
             <p class="articulo__entradilla">{{ noticia.contenido[0] }}</p>
             <p *ngFor="let parrafo of noticia.contenido.slice(1)">{{ parrafo }}</p>
             <figure *ngFor="let imagen of noticia.imagenes" class="articulo__imagen">
-              <img [src]="imagen.url" [alt]="imagen.textoAlternativo" class="img-fluid">
+              <img [src]="imagen.url" [alt]="imagen.textoAlternativo" class="img-fluid" [class.articulo__imagen--vertical]="imagen.vertical">
               <figcaption>{{ imagen.pie }}</figcaption>
             </figure>
           </div>
